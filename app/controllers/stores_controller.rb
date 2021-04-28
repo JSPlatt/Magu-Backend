@@ -8,7 +8,7 @@ class StoresController < ApplicationController
 
 
     def show
-        store = Store.find(params[:id])
+        store = Store.find_by(slug: params[:slug])
         render json: store
     end
 
