@@ -1,5 +1,5 @@
 class ReviewsController < ApplicationController
-    before_action only: [:show, :update, :destroy, :create]
+    # before_action only: [:show, :update, :destroy, :create]
 
     def index
         reviews = Review.all
@@ -27,6 +27,6 @@ class ReviewsController < ApplicationController
             private
 
             def review_params
-                params.require(:review).permit(:name, :image_url)
+                params.require(:review).permit(:name, :image_url, :store_id)
             end
         end

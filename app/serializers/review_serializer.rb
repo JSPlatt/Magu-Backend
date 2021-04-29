@@ -1,5 +1,7 @@
 class ReviewSerializer < BaseSerializer
-  include FastJsonapi::ObjectSerializer
+  include JSONAPI::Serializer
   
   attributes :title, :description, :score, :store_id
+  
+  belongs_to :store
 end

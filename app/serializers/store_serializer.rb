@@ -1,5 +1,5 @@
 class StoreSerializer < BaseSerializer
-  include FastJsonapi::ObjectSerializer
+  include JSONAPI::Serializer
   attributes :name, :image_url, :slug, :avg_score
 
   has_many :reviews
