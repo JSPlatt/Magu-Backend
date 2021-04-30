@@ -1,5 +1,5 @@
 class StoresController < ApplicationController
-    # before_action only: [:show, :update, :destroy, :create]
+   
 
     def index
         stores = Store.all
