@@ -22,6 +22,22 @@ class ReviewsController < ApplicationController
             render json: {"msg": "not created"}
         end
     end
+
+    
+    def update
+        review = Review.find(params[:id])
+        if review.update(review_params)
+        render json: review
+        else
+        render json: review.errors, status: :unprocessable_entity
+        end
+    end
+
+    
+    def destroy
+        review = Review.find(params[:id])
+        review.destroy
+    end
     
 
             private
