@@ -26,12 +26,12 @@ class ReviewsController < ApplicationController
     
     def update
         review = Review.find(params[:id])
-        if review.update(review_params)
+    if review.update(review_params)
         render json: review
-        else
+    else
         render json: review.errors, status: :unprocessable_entity
-        end
     end
+end
 
     
     def destroy
@@ -40,9 +40,9 @@ class ReviewsController < ApplicationController
     end
     
 
-            private
+    private
 
-            def review_params
-                params.require(:review).permit(:name, :image_url, :store_id, :title, :description)
-            end
-        end
+    def review_params
+        params.require(:review).permit(:name, :image_url, :store_id, :title, :description)
+    end
+end
