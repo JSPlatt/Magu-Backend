@@ -1,7 +1,7 @@
 stores = Store.create([
     {
         name:"curaleaf",
-        image_url: "https://www.preparedfoods.com/ext/resources/images/2019/07/Curaleaf-logo_web.jpg?1564417088"
+        image_url: "https://www.preparedfoods.com/ext/resources/images/2019/07/Curaleaf-logo_web.jpg?1564417088",
     },
     {
         name:"MedMen",
@@ -30,12 +30,13 @@ reviews = Review.create([
         title:"Awesome shop",
         description: "I loved it",
         score: 5,
-        store: stores.first
+        store: stores.first,
     },
     {
         title: "Terrible!",
         description: "So expensive!",
         score: 1,
         store: stores.first
-    }
+    },
+    
 ])
