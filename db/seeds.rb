@@ -40,3 +40,38 @@ reviews = Review.create([
     },
     
 ])
+
+products = Product.create([
+    {
+        image: "https://s3-us-west-1.amazonaws.com/dataowl-2/production/pictures/2308-8cb5c8f0fd04369352c3ac3d1617227525800.jpg",
+        style: "Vape",
+        description: "Dutch Apple 0.5G Cartridge",
+        price: "$40.00"
+    },
+
+    {
+        image: "https://s3-us-west-1.amazonaws.com/dataowl-2/production/pictures/2308-5e31f6a3b9ce49477d155f041617227265503.jpg",
+        style: "Vape",
+        description: "Mango Haze .5G Cartridge",
+        price: "$40.00"
+    },
+    {
+        image: "https://s3-us-west-1.amazonaws.com/dataowl-2/production/pictures/2314-b851ef4b58165b348ee529001617896702412.png",
+        style: "Vape",
+        description: "Biscotti 0.5g Cartridge",
+        price: "$25.00"
+    },
+    {
+        image: "https://s3-us-west-1.amazonaws.com/dataowl-2/production/pictures/2308-262e224b5cd902a1a6d7b2fd1616532921091.png",
+        style: "Vape",
+        description: "Black Cherry Cheesecake Solventless",
+        price: "$45.00"
+    },
+    {
+        image: "https://s3-us-west-1.amazonaws.com/dataowl-2/production/pictures/2309-3cd098b0206c133e3c0691251598305907087.jpg",
+        style: "Black Mamba .8g Cartridge",
+        description: "Vape",
+        price: "$55.00"
+    },
+
+])
