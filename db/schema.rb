@@ -20,8 +20,10 @@ ActiveRecord::Schema.define(version: 2021_05_05_164447) do
     t.string "style"
     t.string "description"
     t.string "price"
+    t.bigint "store_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["store_id"], name: "index_products_on_store_id"
   end
 
   create_table "reviews", force: :cascade do |t|
@@ -42,5 +44,6 @@ ActiveRecord::Schema.define(version: 2021_05_05_164447) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "products", "stores"
   add_foreign_key "reviews", "stores"
 end

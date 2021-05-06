@@ -1,4 +1,4 @@
-class ProductSerializer
+class ProductSerializer < BaseSerializer
   include JSONAPI::Serializer
   attributes :image, :style , :desription , :price 
 
