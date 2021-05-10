@@ -105,8 +105,8 @@ products = Product.create([
 
     {
         image: "https://s3-us-west-1.amazonaws.com/dataowl-2/production/pictures/2309-3cd098b0206c133e3c0691251598305907087.jpg",
-        style: "Black Mamba .8g Cartridge",
-        description: "Vape",
+        style: "Vape",
+        description: "Black Mamba .8g Cartridge",
         price: "$55.00",
         store_id: 1
     },

@@ -43,6 +43,6 @@ end
     private
 
     def review_params
-        params.require(:review).permit(:name, :image_url, :store_id, :title, :description)
+        params.require(:review).permit(:name, :image_url, :store_id, :title, :description, :score)
     end
 end
